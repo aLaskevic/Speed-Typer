@@ -1,0 +1,27 @@
+.wordcounter{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    text-align: center;
+}
+.lettItem{
+    text-align:center;
+    border:1px solid; 
+    width:50px;
+    border-radius: 0.1em;
+    display:inline-block;
+    margin:5px;
+    padding:7px
+}
+span{
+    border: 1px solid;
+    font-size:50px;
+    padding-top:-30px;
+}
+.heart-container{
+    float:right;
+    width:100%;
+    text-align:right;
+    margin:0 auto;
+}

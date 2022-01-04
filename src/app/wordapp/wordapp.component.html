@@ -1,0 +1,15 @@
+<div *ngFor="let pc of life" class="heart-container">
+    <img class="heart" *ngIf="pc == true" width="80px" src="assets/images/heart.png">
+</div>
+<div class="wordcounter">
+<h1 @fadeIn style="text-align:center; font-size:50px;">Speed-Typer</h1>
+<hr style="margin-bottom:10%; width:40%;">
+<div>
+    <h1 @vanish *ngFor="let num of expecLetter | split item "  class="lettItem">{{num}}</h1>
+</div>
+<h2 style="text-align:center;">Points: {{corrCounter | number: '1.0-0'}} | Combo: {{multiplier | number: '1.0-0'}}x</h2>
+<h1>{{(timeLeft / 10) | number: '1.1-1'}}</h1>
+<h1 style="padding-top:80px;" *ngIf="dead == true" (click)="playAgain()">
+    Play again?
+</h1>
+</div>
